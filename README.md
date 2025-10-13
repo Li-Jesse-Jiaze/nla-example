@@ -25,6 +25,8 @@ This is a referable template for numerical linear algebra coding assignments. We
 
 ### Windows (PowerShell)
 
+> I would recommend using [WSL](https://learn.microsoft.com/en-us/windows/wsl/install) on Windows. The following I haven't tested but should be correct.
+
 1. Install `uv` (PowerShell 5.1 or newer):
 	```powershell
 	powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
@@ -35,7 +37,7 @@ This is a referable template for numerical linear algebra coding assignments. We
 	```
 3. Activate the environment:
 	```powershell
-	.venv\Scripts\Activate.ps1
+	powershell -ExecutionPolicy ByPass .\.venv\Scripts\activate
 	```
 4. Launch JupyterLab when you want to work with `sheet_0.ipynb`:
 	```powershell
